@@ -8,12 +8,19 @@ import { VirementComponent } from './virement/virement/virement.component';
 
 
 const routes: Routes = [
-  {path: 'auth/login', component: LoginComponent },
+
+  // Rooting d'acceuil la page login
+
+  {path: '', component: LoginComponent },
   {path: 'list-clients', component: ListClientsComponent },
   {path: 'list-clients/new-client', component: FormClientComponent},
   {path: 'list-clients/update-client', component: FormClientComponent},
   {path: 'list-clients/list-compte-client', component: ListCompteClientComponent},
-  {path: 'virement/virement', component: VirementComponent },
+  {path: 'virement/virement', component: VirementComponent},
+
+  // Redirection vers la page d'acceuil
+
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
