@@ -1,0 +1,110 @@
+{
+  "ConseillerClient": [{
+      "id": 1,
+      "nom": "Lupe",
+      "prenom": "Malone",
+      "login": "Lopez",
+      "password": "Francesca"
+    },
+    {
+      "id": 2,
+      "nom": "Vonda",
+      "prenom": "Thornton",
+      "login": "Meredith",
+      "password": "Iva"
+    },
+    {
+      "id": 3,
+      "nom": "Barlow",
+      "prenom": "Pierce",
+      "login": "Joanna",
+      "password": "Kinney"
+    },
+    {
+      "id": 4,
+      "nom": "Carey",
+      "prenom": "Lopez",
+      "login": "Angelina",
+      "password": "Aline"
+    },
+    {
+      "id": 5,
+      "nom": "Garza",
+      "prenom": "Alexander",
+      "login": "Spence",
+      "password": "Moses"
+    }
+  ],
+  "Gerant": [{
+      "id": 1,
+      "nom": "Day",
+      "prenom": "Brady",
+      "login": "Sheri",
+      "password": "Ewing"
+    },
+    {
+      "id": 2,
+      "nom": "Luz",
+      "prenom": "Rhodes",
+      "login": "Tasha",
+      "password": "Cline"
+    },
+    {
+      "id": 3,
+      "nom": "Liliana",
+      "prenom": "Battle",
+      "login": "Nadia",
+      "password": "Felicia"
+    }
+  ],
+  "Client": [{
+      "id": 1,
+      "nom": "Wilda",
+      "prenom": "Vasquez",
+      "adresse": "614 Miami Court, Lund, Louisiana, 9314",
+      "email": "wildavasquez@kegular.com"
+    },
+    {
+      "id": 2,
+      "nom": "Augusta",
+      "prenom": "Cruz",
+      "adresse": "971 Roosevelt Court, Outlook, American Samoa, 7083",
+      "email": "augustacruz@kegular.com"
+    },
+    {
+      "id": 3,
+      "nom": "Marcie",
+      "prenom": "Mcintosh",
+      "adresse": "234 Stoddard Place, Brenton, Maryland, 4150",
+      "email": "marciemcintosh@kegular.com"
+    },
+    {
+      "id": 4,
+      "nom": "Pratt",
+      "prenom": "Hood",
+      "adresse": "222 Wakeman Place, Rivera, Arizona, 2324",
+      "email": "pratthood@kegular.com"
+    },
+    {
+      "id": 5,
+      "nom": "Aurora",
+      "prenom": "Robbins",
+      "adresse": "417 Winthrop Street, Gordon, Iowa, 1689",
+      "email": "aurorarobbins@kegular.com"
+    },
+    {
+      "id": 6,
+      "nom": "Patrica",
+      "prenom": "Bush",
+      "adresse": "948 Applegate Court, Waikele, Virginia, 6823",
+      "email": "patricabush@kegular.com"
+    },
+    {
+      "id": 7,
+      "nom": "Diaz",
+      "prenom": "Guerra",
+      "adresse": "512 Milford Street, Roosevelt, Federated States Of Micronesia, 6768",
+      "email": "diazguerra@kegular.com"
+    }
+  ]
+}
