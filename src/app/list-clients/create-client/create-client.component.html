@@ -6,7 +6,7 @@
 <h1 class="h4 col-sm-4 mb-4 mt-5 offset-sm-1"><u>Nouveau client:</u></h1>
 
 
-<form>
+<form #clientForm="ngForm" (ngSubmit)="nouveauClient(clientForm)">
   <div class="container bg-light border border-dark py-5">
     <div class="form-group row">
       <label class="control-label col-sm-1" for="nom"><strong>Nom</strong></label>
@@ -42,3 +42,5 @@
   </div>
 
 </form>
+
+{{clientForm.value | json }}

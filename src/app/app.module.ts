@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CreateClientComponent } from './list-clients/create-client/create-client.component';
 import { EditClientComponent } from './list-clients/edit-client/edit-client.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { EditClientComponent } from './list-clients/edit-client/edit-client.comp
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [
 
