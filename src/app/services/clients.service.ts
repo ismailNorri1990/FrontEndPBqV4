@@ -17,10 +17,10 @@ export class ClientService {
   }
 
   public effacerClient(client) {
-       return this.httpClient.delete<Client>("http://localhost:3000/Client" + "/" + client.id);
+       return this.httpClient.delete<Client>('http://localhost:3000/Client' + '/' + client.id);
   }
 
-  public creerClient(client) {
-    return this.httpClient.post<Client>("http://localhost:3000/Client", client);
+  public creerClient(client: Client) {
+    return this.httpClient.post<Client>('http://localhost:3000/Client', client);
   }
 }

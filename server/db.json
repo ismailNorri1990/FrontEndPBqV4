@@ -59,5 +59,20 @@
       "password": "Felicia"
     }
   ],
-  "Client": []
+  "Client": [
+    {
+      "nom": "Sidelkhir",
+      "prenom": "Zineb",
+      "adresse": "Oulfa",
+      "email": "zine",
+      "id": 1
+    },
+    {
+      "nom": "Sidelkhir",
+      "prenom": "Zineb",
+      "adresse": "Oulfa",
+      "email": "zine",
+      "id": 2
+    }
+  ]
 }
