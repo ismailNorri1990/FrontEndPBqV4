@@ -8,6 +8,7 @@ import { CreateClientComponent } from './list-clients/create-client/create-clien
 import { EditClientComponent } from './list-clients/edit-client/edit-client.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { AuthGuardService } from './services/auth-guard-conseiller.service';
+import { ParametrageComponent } from './parametrage/parametrage.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'list-clients/list-compte-client', component: ListCompteClientComponent, canActivate: [AuthGuardService]},
   {path: 'virement/virement', component: VirementComponent},
   {path: 'logout', component: LogoutComponent },
+  {path: 'parametrage', component: ParametrageComponent},
 
   // Redirection vers la page d'acceuil
 

@@ -14,6 +14,7 @@ import { CreateClientComponent } from './list-clients/create-client/create-clien
 import { EditClientComponent } from './list-clients/edit-client/edit-client.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 
+import { ParametrageComponent } from './parametrage/parametrage.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LogoutComponent } from './auth/logout/logout.component';
     VirementComponent,
     CreateClientComponent,
     EditClientComponent,
-    LogoutComponent
+    LogoutComponent,
+    ParametrageComponent
   ],
   imports: [
     BrowserModule,
