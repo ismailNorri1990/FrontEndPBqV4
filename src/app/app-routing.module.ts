@@ -20,9 +20,9 @@ const routes: Routes = [
   {path: 'list-clients/new-client', component: CreateClientComponent, canActivate: [AuthGuardService]},
   {path: 'list-clients/edit-client', component: EditClientComponent, canActivate: [AuthGuardService]},
   {path: 'list-clients/list-compte-client', component: ListCompteClientComponent, canActivate: [AuthGuardService]},
-  {path: 'virement/virement', component: VirementComponent},
-  {path: 'logout', component: LogoutComponent },
-  {path: 'parametrage', component: ParametrageComponent},
+  {path: 'virement/virement', component: VirementComponent, canActivate: [AuthGuardService]},
+  {path: 'logout', component: LogoutComponent, canActivate: [AuthGuardService] },
+  {path: 'parametrage', component: ParametrageComponent, canActivate: [AuthGuardService]},
 
   // Redirection vers la page d'acceuil
 
