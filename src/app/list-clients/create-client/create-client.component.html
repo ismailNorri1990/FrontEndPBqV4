@@ -6,12 +6,12 @@
 <h1 class="h4 col-sm-4 mb-4 mt-5 offset-sm-1"><u>Nouveau client:</u></h1>
 
 
-<form #clientForm="ngForm" (ngSubmit)="nouveauClient(clientForm)">
+<form #clientForm="ngForm" ngNativeValidate (ngSubmit)="nouveauClient(clientForm)">
   <div class="container bg-light border border-dark py-5">
     <div class="form-group row">
       <label class="control-label col-sm-1" for="nom"><strong>Nom</strong></label>
       <div class="col-sm-3">
-        <input required type="text" ngModel #nom="ngModel" class="form-control" id="nom" name="nom" placeholder="nom" />
+        <input required type="text" ngModel class="form-control" id="nom" name="nom" placeholder="nom" />
       </div>
     </div>
 

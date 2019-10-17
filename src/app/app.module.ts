@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateClientComponent } from './list-clients/create-client/create-client.component';
 import { EditClientComponent } from './list-clients/edit-client/edit-client.component';
+import { LogoutComponent } from './auth/logout/logout.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { EditClientComponent } from './list-clients/edit-client/edit-client.comp
     HeaderComponent,
     VirementComponent,
     CreateClientComponent,
-    EditClientComponent
+    EditClientComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

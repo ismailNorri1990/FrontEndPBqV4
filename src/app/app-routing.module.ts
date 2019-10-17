@@ -6,6 +6,8 @@ import { ListCompteClientComponent } from './list-clients/list-compte-client/lis
 import { VirementComponent } from './virement/virement/virement.component';
 import { CreateClientComponent } from './list-clients/create-client/create-client.component';
 import { EditClientComponent } from './list-clients/edit-client/edit-client.component';
+import { LogoutComponent } from './auth/logout/logout.component';
+import { AuthGuardService } from './services/auth-guard-conseiller.service';
 
 
 const routes: Routes = [
@@ -13,11 +15,12 @@ const routes: Routes = [
   // Rooting d'acceuil la page login
 
   {path: '', component: LoginComponent },
-  {path: 'list-clients', component: ListClientsComponent },
-  {path: 'list-clients/new-client', component: CreateClientComponent},
-  {path: 'list-clients/edit-client', component: EditClientComponent},
-  {path: 'list-clients/list-compte-client', component: ListCompteClientComponent},
+  {path: 'list-clients', component: ListClientsComponent, canActivate: [AuthGuardService] },
+  {path: 'list-clients/new-client', component: CreateClientComponent, canActivate: [AuthGuardService]},
+  {path: 'list-clients/edit-client', component: EditClientComponent, canActivate: [AuthGuardService]},
+  {path: 'list-clients/list-compte-client', component: ListCompteClientComponent, canActivate: [AuthGuardService]},
   {path: 'virement/virement', component: VirementComponent},
+  {path: 'logout', component: LogoutComponent },
 
   // Redirection vers la page d'acceuil
 
