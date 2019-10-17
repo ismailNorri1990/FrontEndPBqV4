@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,12 +8,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
+  login = 'groupeC';
+  password = 'test';
+  invalidLogin = false;
+
+  constructor(private router: Router,
+              private loginservice: AuthService) { }
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+
   }
 
-  log(x) {
-    console.log(x);
+  checkLogin() {
+    if (this.loginservice.authentification(this.login, this.password)
+    ) {
+      this.router.navigate(['list-clients']);
+      this.invalidLogin = false;
+    } else {
+      this.invalidLogin = true;
+    }
   }
 
 }

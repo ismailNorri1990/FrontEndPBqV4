@@ -27,7 +27,7 @@
         <td>{{client.email}}</td>
         <td class="row mx-md-n2">
           <a routerLink="/list-clients/edit-client" class="col px-md-1"><img src="assets/img/editbutton.png" width="30" height="30"></a>
-          <a class="col px-md-1"><img src="assets/img/deleting.png" width="20" height="20"></a>
+          <a class="col px-md-1" (click)="effacerClient(client)"><img src="assets/img/deleting.png" width="20" height="20"></a>
           <a class="col px-md-1"><img src="assets/img/find.png" width="20" height="20"></a>
           <a class="col px-md-1"><img src="assets/img/transfert.png" width="25" height="25"></a>
         </td>
