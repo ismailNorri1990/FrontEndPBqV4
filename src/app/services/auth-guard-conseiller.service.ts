@@ -11,7 +11,7 @@ constructor(private router: Router,
             private authService: AuthService) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-    if (this.authService.isConseillerLoggedIn()) {
+    if (this.authService.isUserLoggedIn()) {
       return true;
     }
 
