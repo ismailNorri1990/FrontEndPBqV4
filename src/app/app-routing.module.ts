@@ -5,8 +5,8 @@ import { ListClientsComponent } from './list-clients/list-clients.component';
 import { FormClientComponent } from './list-clients/form-client/form-client.component';
 import { ListCompteClientComponent } from './list-clients/list-compte-client/list-compte-client.component';
 import { VirementComponent } from './virement/virement/virement.component';
-
-
+import { ListConseillersComponent } from './list-conseillers/list-conseillers.component';
+import { FormConseillerComponent } from './list-conseillers/form-conseiller/form-conseiller.component';
 const routes: Routes = [
 
   // Rooting d'acceuil la page login
@@ -17,6 +17,8 @@ const routes: Routes = [
   {path: 'list-clients/update-client', component: FormClientComponent},
   {path: 'list-clients/list-compte-client', component: ListCompteClientComponent},
   {path: 'virement/virement', component: VirementComponent},
+  {path: 'list-conseillers', component: ListConseillersComponent },
+  {path: 'list-conseillers/new-conseiller', component: FormConseillerComponent },
 
   // Redirection vers la page d'acceuil
 

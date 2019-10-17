@@ -1,1 +1,90 @@
-<p>form-client works!</p>
+
+<!-- Header -->
+<app-header></app-header>
+<div class="container">
+        <h1 class="h4 col-sm-4 mb-4 mt-5 offset-sm-1"><u>Nouveau Client:</u></h1>
+<!---->
+        <form>
+          <div class="container bg-light border border-dark py-3">
+            <h3 class="h4 col-sm-3 mb-3 mt-3 offset-sm-0">Informations</h3>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="validationDefault01">First name</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="first name" required>
+                  </div>
+                   <div class="col-md-4 mb-3">
+                    <label for="validationDefault02">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="last name" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="validationDefaultUsername">E-mail</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                      </div>
+                      <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationDefault03">Adresse</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="Adresse" required>
+                  </div>
+                </div>
+          </div>
+
+
+          <div class="container bg-light border border-dark py-3">
+            <div class="form-group">
+                <div class="form-check">
+                 <h3 class="h4 col-sm-3 mb-3 mt-3 offset-sm-0">Compte Courant </h3>
+                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">Agree to terms and conditions</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault01">N°</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="number"  required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault02">Solde</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="an least 20$"  required>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="container bg-light border border-dark py-3">
+            <div class="form-group">
+              <div class="form-check">
+                <h3 class="h4 col-sm-3 mb-3 mt-3 offset-sm-0">Compte Epargne </h3>
+
+
+              </div>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="validationDefault01">N°</label>
+                  <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="N°" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationDefault02">Solde</label>
+                  <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="solde" required>
+                </div>
+               </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit" class= "col-sm-4 mb-4 mt-5 offset-sm-1">Submit form</button>
+      </form>
+
+
+
+
+
+
+
+
+
+

@@ -11,6 +11,9 @@ import { HeaderComponent } from './header/header.component';
 import { VirementComponent } from './virement/virement/virement.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ListConseillersComponent } from './list-conseillers/list-conseillers.component';
+import { FormConseillerComponent } from './list-conseillers/form-conseiller/form-conseiller.component';
+import { HeaderConseillerComponent } from './header-conseiller/header-conseiller.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { HttpClientModule } from '@angular/common/http';
     ListCompteClientComponent,
     FormClientComponent,
     HeaderComponent,
-    VirementComponent
+    VirementComponent,
+    ListConseillersComponent,
+    FormConseillerComponent,
+    HeaderConseillerComponent
   ],
   imports: [
     BrowserModule,
