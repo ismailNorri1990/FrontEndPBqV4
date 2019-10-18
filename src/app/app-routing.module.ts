@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './auth/login/login.component';
+import { LoginComponent } from './auth/login/loginConseiller.component';
 import { ListClientsComponent } from './list-clients/list-clients.component';
 import { ListCompteClientComponent } from './list-clients/list-compte-client/list-compte-client.component';
 import { VirementComponent } from './virement/virement/virement.component';
@@ -9,13 +9,15 @@ import { EditClientComponent } from './list-clients/edit-client/edit-client.comp
 import { LogoutComponent } from './auth/logout/logout.component';
 import { AuthGuardService } from './services/auth-guard-conseiller.service';
 import { ParametrageComponent } from './parametrage/parametrage.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 
 const routes: Routes = [
 
   // Rooting d'acceuil la page login
 
-  {path: '', component: LoginComponent },
+  {path: '', component: AccueilComponent},
+  {path: 'auth/login', component: LoginComponent},
   {path: 'list-clients', component: ListClientsComponent, canActivate: [AuthGuardService] },
   {path: 'list-clients/new-client', component: CreateClientComponent, canActivate: [AuthGuardService]},
   {path: 'list-clients/edit-client', component: EditClientComponent, canActivate: [AuthGuardService]},
