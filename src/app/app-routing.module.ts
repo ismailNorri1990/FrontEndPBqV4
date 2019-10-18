@@ -7,6 +7,7 @@ import { VirementComponent } from './virement/virement/virement.component';
 import { CreateClientComponent } from './list-clients/create-client/create-client.component';
 import { EditClientComponent } from './list-clients/edit-client/edit-client.component';
 import { ParametrageComponent } from './parametrage/parametrage.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'list-clients/list-compte-client', component: ListCompteClientComponent},
   {path: 'virement/virement', component: VirementComponent},
   {path: 'parametrage', component: ParametrageComponent},
+  {path: 'accueil', component: AccueilComponent},
 
   // Redirection vers la page d'acceuil
 

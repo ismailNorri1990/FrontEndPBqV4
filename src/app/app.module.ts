@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CreateClientComponent } from './list-clients/create-client/create-client.component';
 import { EditClientComponent } from './list-clients/edit-client/edit-client.component';
 import { ParametrageComponent } from './parametrage/parametrage.component';
-
+import { AccueilComponent } from './accueil/accueil.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,8 @@ import { ParametrageComponent } from './parametrage/parametrage.component';
     VirementComponent,
     CreateClientComponent,
     EditClientComponent,
-    ParametrageComponent
+    ParametrageComponent,
+    AccueilComponent,
   ],
   imports: [
     BrowserModule,
