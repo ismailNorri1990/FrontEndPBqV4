@@ -15,11 +15,11 @@
     <div class="row mb-3">
       <label class="control-label col-md-1" for="nom"><strong>Nom</strong></label>
       <div class="col">
-        <input required type="text" ngModel #nom="ngModel" class="form-control" id="nom" name="nom" placeholder="nom" />
+        <input required type="text" [(ngModel)]="client.nom" class="form-control" id="nom" name="nom" placeholder="nom" />
       </div>
       <label class="control-label col-md-1" for="solde"><strong>Solde</strong></label>
       <div class="col">
-        <input required type="text" ngModel #nom="ngModel" class="form-control" id="solde" name="solde" min="20"
+        <input required type="text"  class="form-control" id="solde" name="solde" min="20"
           placeholder="20" />
       </div>
     </div>
@@ -29,17 +29,17 @@
       <div class="col-sm-3">
         <input required type="text" [(ngModel)]="client.prenom" class="form-control" id="prenom" name="prenom" placeholder="prenom">
       </div>
-     
+
       <div class="custom-control custom-checkbox mb-6 offset-sm-3">
           <label class="custom-control-label h6 " for="compte_epargne_checkbox">Compte Epargne</label>
         <input class="custom-control-input" type="checkbox" id="compte_epargne_checkbox">
-        
+
       </div>
     </div>
     <div class="row mb-3">
       <label class="control-label col-sm-1" for="adresse"><strong>Adresse</strong></label>
       <div class="col">
-        <input required type="text" ngModel #nom="ngModel" class="form-control" id="adresse" name="adresse" placeholder="adresse" />
+        <input required type="text" [(ngModel)]="client.adresse" class="form-control" id="adresse" name="adresse" placeholder="adresse" />
       </div>
       <label class="control-label col-sm-1" for="solde"><strong>Solde</strong></label>
       <div class="col">

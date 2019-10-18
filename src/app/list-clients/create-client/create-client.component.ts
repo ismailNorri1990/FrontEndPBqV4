@@ -9,11 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./create-client.component.css']
 })
 
-
-
 export class CreateClientComponent implements OnInit {
 
-  client: Client ;
+  client: Client = new Client( '', '', '', '') ;
 
   constructor(private clientService: ClientService, private router: Router) { }
 

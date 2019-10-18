@@ -12,4 +12,7 @@ export class EditClientComponent implements OnInit {
   ngOnInit() {
   }
 
+  editClient(client) {
+    console.log( 'Modif' + client);
+  }
 }
