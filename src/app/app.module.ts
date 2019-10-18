@@ -15,6 +15,8 @@ import { EditClientComponent } from './list-clients/edit-client/edit-client.comp
 import { LogoutComponent } from './auth/logout/logout.component';
 
 import { ParametrageComponent } from './parametrage/parametrage.component';
+import { ListConseillersComponent } from './list-conseillers/list-conseillers.component';
+import { CreateConseillerComponent } from './list-conseillers/create-conseiller/create-conseiller.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ParametrageComponent } from './parametrage/parametrage.component';
     CreateClientComponent,
     EditClientComponent,
     LogoutComponent,
-    ParametrageComponent
+    ParametrageComponent,
+    ListConseillersComponent,
+    CreateConseillerComponent
   ],
   imports: [
     BrowserModule,
